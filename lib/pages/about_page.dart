@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class AboutPage extends StatelessWidget {
@@ -8,15 +7,26 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "About app",
-          style: TextStyle(
-            fontWeight: FontWeight.bold
-          ),
-        ),
+        title: Text('Biodata'),
       ),
       body: Center(
-        child: const Text("itg.ac.id © 2024"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Nama: Sita Sri Andari',
+              style: TextStyle(fontSize: 20),
+            ),
+            Text(
+              'Nim:2106050',
+              style: TextStyle(fontSize: 20),
+            ),
+            Text(
+              'Kelas: Teknik Informatika C',
+              style: TextStyle(fontSize: 20),
+            ),
+          ],
+        ),
       ),
     );
   }
